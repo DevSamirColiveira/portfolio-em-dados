@@ -1,0 +1,20 @@
+1º Passo foi.
+ Criados Cartões.
+
+Entrada - Entradas = CALCULATE(SUM(Estoque[Valor Total]),Estoque[Tipo Movimentação]="Entrada")
+Saída - Saídas = CALCULATE(SUM(Estoque[Valor Total]),Estoque[Tipo Movimentação]="Saída")
+Estoque - Estoque = [Entradas]-[Saídas]
+Giro de Estoque - Giro de Estoque = [Saídas]/Estoque[Estoque]
+
+Rótulos de referência
+
+Entradas - Entradas (qtd) = CALCULATE(SUM(Estoque[Qtd]),Estoque[Tipo Movimentação]="Entrada")
+Saídas - Saídas (qtd) = CALCULATE(SUM(Estoque[Qtd]),Estoque[Tipo Movimentação]="Saída")
+Estoque - Estoque (qtd) = [Entradas (qtd)]-[Saídas (qtd)]
+Período - 
+Período (dias) = 
+VAR MemorData = MIN(Estoque[Data Movimentação])
+VAR MaiorData = MAX(Estoque[Data Movimentação])
+RETURN
+DATEDIFF(MemorData,MaiorData,DAY)
+

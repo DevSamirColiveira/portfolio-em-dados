@@ -1,0 +1,159 @@
+O comando SELECT é utilizado quando precisamos de selecionar uma informação de uma coluna em uma tabela.
+Exp.
+select coluna_1, coluna_2  
+from schema_1.tabela_1
+
+--como ficaria--
+Exp_1
+select email
+from sales.customers
+
+Exp_2
+select first_name, last_name, email
+from sales.customers
+
+Exp_3
+select *
+from sales.customers
+
+(1) Comando usado para selecionar colunas de tabelas.
+(2) Quando selecionar mais de uma coluna, elas devem ser separadas por vírgula.
+(3) Pode-se utilizar o asterisco (*) para selecionar todas as colunas da tabela.
+____________________________________________________________________
+
+O comando DISTINCT serve para remover linhas duplicadas e mostrar apenas linhas distintas é muito usado na etapa de exploração das bases 
+
+Exp.
+select distinct coluna_1, coluna_2, coluna_3
+from schema_1.tabela_1
+
+Exp_1
+select brand
+from sales.products
+
+Exp_2
+select distinct brand
+from sales.products
+
+Exp_3
+select distinct brand, model_year
+from sales.products
+
+(1) Comando usado para remover linhas duplicadas e mostrar apenas linhas distintas
+(2) Muito utilizado na etapa de exploração dos dados
+(3) Caso mais de uma coluna seja selecionada, o comando SELECT DISTINCT irá retornar todas as combinações distintas.
+____________________________________________________________________
+
+-- O comando WHERE serve para filtrar linhas de acordo com uma condição
+Exp.
+select coluna_1, coluna_2, coluna_3
+from schema_1.tabela_1
+where condição_x = true
+
+Exp_1
+select email, state
+from sales.customers
+where state = 'SP'
+
+-- foi utinizados aspas '' simples porque se trata de texto.
+-- O SQL não é inerentemente case-sensitive
+-- where state = 'SP' ou 'sp'
+
+Exp_2
+select email, state
+from sales.customers
+where state = 'SP' or state = 'MG'
+
+Exp_3
+-- Liste os emails dos clientes da nossa base que moram no estado de São Paulo 
+-- ou Mato Gerais e que tem mais de 30 anos
+
+-- Vamos utilizar o comando abaixo para ver como o formato de date está na tabela.
+select distinct birth_date
+from sales.customers
+
+
+select distinct email, state, birth_date
+from sales.customers
+where (state = 'SP' or state = 'MS') and birth_date < '1991-12-28'
+
+OU
+
+where (state = 'SP' or state = 'MS') and birth_date < '1991-12-28'
+
+
+(1) No PostgreSQL são utilizadas aspas simples para delimitar strings 
+(2) string = sequência de caracteres = texto
+(3) Pode-se combinar mais de uma condição utilizando os operadores lógicos
+(4) No PostgreSQL as datas são escritas no formato 'YYYY-MM-DD' ou 'YYYYMMDD'
+
+____________________________________________________________________
+
+O comando ORDER BY serve para ordenar a seleção de acordo com uma regra definida pelo usuário
+
+Exp.
+select coluna_1, coluna_2, coluna_3
+from schema_1.tabela_1
+where condição_x = true
+order by coluna_1
+
+Exp_1 - Liste produtos da tabela products na ordem crescente com base no preço
+select *
+from sales.products
+order by price
+
+Exp_2 - Liste produtos da tabela products na ordem decrescente com base no preço
+select *
+from sales.products
+order by price desc
+
+Exp_3 - Liste os estados distintos da tabela customers na ordem crescente
+select distinct state
+from sales.customers
+order by state
+
+Exp_4 - Liste os emails dos clientes da nossa base que moram no estado de São Paulo e Mato Grosso do Sul
+
+select email, state
+from sales.customers
+where state = 'SP' or state = 'MS'
+
+Exp_5
+--Esta é a maneira mais flexível e recomendada para definir uma ordem de agrupamento específica:
+select email, state
+from sales.customers
+where state = 'SP' or state = 'MS'
+order by
+    case state
+        when 'SP' then 1  -- Atribui 1 para registros de SP (aparecerão primeiro)
+        when 'MG' then 2  -- Atribui 2 para registros de MG (aparecerão depois)
+    end;
+
+____________________________________________________________________
+
+O camando LIMIT serve para limitar o nº de linhas da consulta.
+Muito utilizado na etapa de exploração dos dados gigantesco
+
+Exp.
+select coluna_1, coluna_2, coluna_3
+from schema_1.tabela_1
+where condilção_x = true
+order by coluna_1
+limit N
+
+Exp_1 - Liste as 10 primeiras linhas da tabela funnel utilizando o LIMIT
+select *
+from sales.funnel
+limit 10
+
+Exp_2 - Liste os 10 produtos mais caros da tabela products com o comando LIMIT
+
+select * 
+from sales.products
+order by price desc
+limit 10
+
+(1) Muito utilizado em conjunto com o comando ORDER BY quando o que importa são os TOP N. Ex: "N pagamentos mais recentes", "N produtos mais caros"
+
+
+
