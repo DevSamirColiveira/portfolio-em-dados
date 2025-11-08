@@ -1,0 +1,22 @@
+1º Passo.
+ Criados Cartões.
+
+Faturamento - Faturamento = CALCULATE(SUM(Dados[Valor]),Dados[Tipo]="Receita")
+Despesas - Despesas = CALCULATE(SUM(Dados[Valor]),Dados[Tipo]="Custo")
+Resultado - Resultado = [Faturamento]-[Despesas]
+
+
+Rótulos de referência
+
+Parâmetro Financeiro = {
+    ("Centro de Custo", NAMEOF('Dados'[Centro de Custo]), 0),
+    ("Categoria", NAMEOF('Dados'[Categoria]), 1),
+    ("Lançamento", NAMEOF('Dados'[Lançamento (Descrição)]), 2)
+}
+
+
+Parâmetro Meses com Ano = {
+    ("Ano", NAMEOF('Dados'[Data].[Ano]), 0),
+    ("Mês", NAMEOF('Dados'[Data].[Mês]), 1),
+    ("Resultado", NAMEOF('Dados'[Resultado]), 2)
+}
