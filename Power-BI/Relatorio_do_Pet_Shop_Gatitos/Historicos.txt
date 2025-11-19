@@ -1,0 +1,13 @@
+A Samantha, é a proprietária de uma pet shop chamada Gatitos.
+
+Ela tem um grande desejo de expandir o seu negócio. Ela quer abrir outras filiais e tomar várias decisões baseadas em dados. A Samantha nos contratou para lhe ajudar a responder perguntas e gerar insights para tomar as melhores decisões para alavancar o seu negócio.
+
+
+Base de dado
+{
+- Clientes
+- Produtos
+- Vendas
+}
+
+o faturamento total do pet shop no período fornecido.
