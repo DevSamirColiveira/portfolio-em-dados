@@ -21,3 +21,7 @@ Temos o Arquivo Principal - A pasta de trabalho (comumente com a extensão .xlsx
 ---
 ### 🎉 Resultado Final
 ![](https://github.com/DevSamirColiveira/portfolio-em-dados/blob/main/Excel/E-commerce_meteora/Tela_Deshboard_final.png)
+---
+
+📅 _Desenvolvido por [Samir Cavalcanti de Oliveira](https://www.linkedin.com/in/samir-oliveira-dev/)_  
+📂 Projeto do repositório: [portfolio-em-dados](https://github.com/DevSamirColiveira/portfolio-em-dados)
