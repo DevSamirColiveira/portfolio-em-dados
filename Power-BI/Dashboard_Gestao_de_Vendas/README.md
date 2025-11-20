@@ -37,7 +37,7 @@ Foi desenvolvido como um dos meus projetos em Power BI, inserido na jornada de t
 ---
 
 ## 🖼️ Visual do Dashboard  
-![Dashboard de Gestão de Vendas](https://raw.githubusercontent.com/DevSamirColiveira/portfolio-em-dados/main/Power%20BI/Dashboard_Gest%C3%A3o_de_Vendas/IMG%20-%20Dashboard_Gest%C3%A3o_de_Vendas.png)
+![Dashboard de Gestão de Vendas]([https://raw.githubusercontent.com/DevSamirColiveira/portfolio-em-dados/main/Power%20BI/Dashboard_Gest%C3%A3o_de_Vendas/IMG%20-%20Dashboard_Gest%C3%A3o_de_Vendas.png](https://app.powerbi.com/view?r=eyJrIjoiYTNjZGNjOWItZTA4Yy00YWY2LWExZTMtZTFkNjg5YzE2OGI2IiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9))
 
 ---
 
