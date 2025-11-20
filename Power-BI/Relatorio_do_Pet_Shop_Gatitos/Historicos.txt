@@ -10,4 +10,4 @@ Base de dado
 - Vendas
 }
 
-o faturamento total do pet shop no período fornecido.
+Nesse DashBoard podemos ver o faturamento total do pet shop no período fornecido e media de pets por clientes. Mas nos detalhes de faturamento por (Gênero, Data)
