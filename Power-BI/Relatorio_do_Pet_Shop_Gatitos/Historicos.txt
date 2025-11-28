@@ -1,4 +1,4 @@
-A Samantha, é a proprietária de uma pet shop chamada Gatitos.
+A Samantha, é a proprietária de uma pet shop chamado Gatitos.
 
 Ela tem um grande desejo de expandir o seu negócio. Ela quer abrir outras filiais e tomar várias decisões baseadas em dados. A Samantha nos contratou para lhe ajudar a responder perguntas e gerar insights para tomar as melhores decisões para alavancar o seu negócio.
 
@@ -10,4 +10,10 @@ Base de dado
 - Vendas
 }
 
-Nesse DashBoard podemos ver o faturamento total do pet shop no período fornecido e media de pets por clientes. Mas nos detalhes de faturamento por (Gênero, Data)
+Nesse DashBoard podemos ver o faturamento total do pet shop no período fornecido e media de pets por clientes. Mas nos detalhes de faturamento por (Gênero, Data).
+
+Em faturamento total por bairro podemos ver que os clientes dos bairros (Guaianases, Cidade Tiradentes, São Miguel Paulista e Lila Prudente) vão comprar em Itaquera. Sendo assim que o bairro de Guaianases é uma opção a se pensar de abri uma nova filial.
+
+Em faturamento por data demos os detalhe de 6 em 6 meses.Como também filtrar por estado civil, por marcas e data da compra.
+
+Em nome do produto, se desejar testar, pode fazer uma busca por (Ração ou Coleira).
