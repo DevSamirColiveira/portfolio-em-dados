@@ -12,8 +12,11 @@ Base de dado
 
 Nesse DashBoard podemos ver o faturamento total do pet shop no período fornecido e media de pets por clientes. Mas nos detalhes de faturamento por (Gênero, Data).
 
-Em faturamento total por bairro podemos ver que os clientes dos bairros (Guaianases, Cidade Tiradentes, São Miguel Paulista e Lila Prudente) vão comprar em Itaquera. Sendo assim que o bairro de Guaianases é uma opção a se pensar de abri uma nova filial.
+Em faturamento total por bairro podemos ver que os clientes dos bairros (Guaianases, Cidade Tiradentes, São Miguel Paulista e Vila Prudente) vão comprar em Itaquera. Sendo assim que o bairro de Guaianases é uma opção a se pensar de abri uma nova filial.
 
-Em faturamento por data demos os detalhe de 6 em 6 meses.Como também filtrar por estado civil, por marcas e data da compra.
+Em faturamento por data demos os detalhe de 6 em 6 meses. Como também filtrar por estado civil, por marcas e data da compra.
 
 Em nome do produto, se desejar testar, pode fazer uma busca por (Ração ou Coleira).
+
+
+https://app.powerbi.com/view?r=eyJrIjoiYzcwMGFmODgtNDU3Yy00YTVmLWFkY2MtZWFiOTdmMTA2MzQxIiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9
